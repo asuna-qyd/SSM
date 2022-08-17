@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<title>登录界面</title>
+	</head>
+
+	<body>
+		<div id="bigBox">
+			<h1>LOGIN</h1>
+			<div class="inputBox">
+				<div class="inputText">
+					<form th:action="@{/login}" class="form" id="form2"  method="post">
+						<span class="iconfont icon-nickname"></span>
+						<input type="text" placeholder="Username" name="userName" id="userName" th:value="${testScope}"/>
+						<br><br>
+						<span class="iconfont icon-visible"></span>
+						<input type="password" placeholder="Password" name="userPassword" id="userPassword"/>
+						<br>
+						<button class="loginButton" name="In" ID="In" >Sign In</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
